@@ -1,4 +1,7 @@
 # react-component
+[![Latest Stable Version](https://img.shields.io/packagist/v/alvarofpp/react-component.svg)](//packagist.org/packages/alvarofpp/react-component)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](//packagist.org/packages/alvarofpp/react-component)
+
 A package to make it easy to manipulate your react components.
 
 ## Contents
@@ -33,7 +36,7 @@ Create a new React component file.
 php artisan make:react-component Users/UsersList
 ```
 
-Will create a file called `UsersList.js` at `resources/js/components/Users/UsersList.js`.
+Will create a file called `UsersList.js` at `resources/js/components/Users/`.
 
 ## Contributing
 Contributions are more than welcome. Fork, improve and make a pull request. For bugs, ideas for improvement or other, please create an [issue](https://github.com/alvarofpp/laravel-react-components/issues).

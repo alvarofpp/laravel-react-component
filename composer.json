@@ -3,6 +3,8 @@
     "description": "A package to make it easy to manipulate your react components",
     "keywords" : ["laravel", "react", "generators"],
     "type": "library",
+    "homepage": "https://github.com/alvarofpp/laravel-react-components",
+    "license": "MIT",
     "authors": [
         {
             "name": "Álvaro Ferreira Pires de Paiva",

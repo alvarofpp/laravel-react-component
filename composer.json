@@ -1,0 +1,25 @@
+{
+    "name": "alvarofpp/react-component",
+    "description": "A package to make it easy to manipulate your react components",
+    "keywords" : ["laravel", "react", "generators"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Álvaro Ferreira Pires de Paiva",
+            "email": "alvarofepipa@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "laravel/laravel": ">=6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ReactComponent\\": "/src"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

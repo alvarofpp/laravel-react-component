@@ -1,6 +1,6 @@
 <?php
 
-namespace ReactComponent\Exceptions;
+namespace Alvarofpp\ReactComponent\Exceptions;
 
 use Exception;
 

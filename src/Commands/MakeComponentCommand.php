@@ -1,9 +1,9 @@
 <?php
 
-namespace ReactComponent\Commands;
+namespace Alvarofpp\ReactComponent\Commands;
 
 use Illuminate\Console\Command;
-use ReactComponent\Exceptions\ComponentAlreadyExists;
+use Alvarofpp\ReactComponent\Exceptions\ComponentAlreadyExists;
 
 class MakeComponentCommand extends Command
 {
@@ -12,7 +12,9 @@ class MakeComponentCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:react-component {name=Example}';
+    protected $signature = 'make:react-component
+    { name=Example : The name of the component }
+    { --require : Add require in app.js }';
 
     /**
      * The console command description.
@@ -48,7 +50,24 @@ class MakeComponentCommand extends Command
         $this->createFile($filename, strtolower(class_basename($name)));
 
         $this->info('Component ' . ucfirst(class_basename($name)) . ' succesfully created!');
+
+        if ($this->option('require')) {
+            $this->addRequire($name);
+        }
+
         return true;
+    }
+
+    /**
+     * Add the component in "app.js".
+     * @param string $name
+     */
+    protected function addRequire(string $name): void
+    {
+        $appFile = resource_path('js') . '/app.js';
+        $requireLine = PHP_EOL."require('./components/".$name."');";
+
+        file_put_contents($appFile, $requireLine, FILE_APPEND);
     }
 
     /**
@@ -58,7 +77,7 @@ class MakeComponentCommand extends Command
      * @param string $name
      * @throws ComponentAlreadyExists
      */
-    protected function createFile(string $filename, string $name)
+    protected function createFile(string $filename, string $name): void
     {
         if (file_exists($filename)) {
             throw ComponentAlreadyExists::fileExists(ucfirst($name));

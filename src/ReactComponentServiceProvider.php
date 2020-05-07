@@ -1,9 +1,9 @@
 <?php
 
-namespace ReactComponent;
+namespace Alvarofpp\ReactComponent;
 
-use ReactComponent\Commands\MakeComponentCommand;
 use Illuminate\Support\ServiceProvider;
+use Alvarofpp\ReactComponent\Commands\MakeComponentCommand;
 
 class ReactComponentServiceProvider extends ServiceProvider
 {

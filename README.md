@@ -20,7 +20,7 @@ Edit the `config/app.php` file and add the following line to register the servic
 'providers' => [
     // ...
 
-    ReactComponent\ReactComponentServiceProvider::class,
+    Alvarofpp\ReactComponent\ReactComponentServiceProvider::class,
 
     // ...
 ],
@@ -37,6 +37,7 @@ php artisan make:react-component Users/UsersList
 ```
 
 Will create a file called `UsersList.js` at `resources/js/components/Users/`.
+To add the component in `app.js`, use the `--require` option.
 
 ## Contributing
 Contributions are more than welcome. Fork, improve and make a pull request. For bugs, ideas for improvement or other, please create an [issue](https://github.com/alvarofpp/laravel-react-components/issues).

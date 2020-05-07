@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ReactComponent\\": "/src"
+            "Alvarofpp\\ReactComponent\\": "/src"
         }
     },
     "minimum-stability": "stable",

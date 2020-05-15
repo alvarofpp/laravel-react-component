@@ -1,6 +1,6 @@
 # react-component
-[![Latest Stable Version](https://img.shields.io/packagist/v/alvarofpp/react-component.svg)](//packagist.org/packages/alvarofpp/react-component)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](//packagist.org/packages/alvarofpp/react-component)
+[![Packagist Version](https://img.shields.io/packagist/v/alvarofpp/react-component)](https://packagist.org/packages/alvarofpp/react-component)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/alvarofpp/laravel-react-component/blob/master/LICENSE)
 
 A package to make it easy to manipulate your react components.
 

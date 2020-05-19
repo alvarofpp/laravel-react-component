@@ -15,7 +15,7 @@ Install via composer:
 composer require alvarofpp/react-component
 ```
 
-Edit the `config/app.php` file and add the following line to register the service provider:
+Open the `config/app.php` file and add the following line to register the service provider:
 ```php
 'providers' => [
     // ...
